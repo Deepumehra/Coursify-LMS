@@ -30,10 +30,12 @@ app.all('*', (_req, res) => {
     res.status(404).send('OOPS!!! 404 Page Not Found');
 });
 // Import all routes
+import courseRoutes from './routes/course.routes.js';
 import userRoutes from './routes/user.routes.js';
 
 
 app.use('/api/v1/user',userRoutes);
+app.use('/api/v1/courses', courseRoutes);
 // Custom error handling middleware
 app.use(errorMiddleware);
   
