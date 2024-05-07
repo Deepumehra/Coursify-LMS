@@ -1,10 +1,22 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-
+import NotRequireAuth from "./Components/Auth/NotRequireAuth"
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+import Homepage from './Pages/Homepage'
+import Login from "./Pages/Login"
+import Signup from "./Pages/Signup"
 function App() {
   return (
-    <h1 className=' flex align-center justify-center bg-red-500 500 text-white'>
-      LMS
-    </h1>
+    <Routes>
+      <Route path='/' element={<Homepage/>}/>
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route element={<NotRequireAuth />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+      </Route>
+    </Routes>
   )
 }
 
