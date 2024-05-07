@@ -29,7 +29,11 @@ app.get('/ping', (_req, res) => {
 app.all('*', (_req, res) => {
     res.status(404).send('OOPS!!! 404 Page Not Found');
 });
-  
+// Import all routes
+import userRoutes from './routes/user.routes.js';
+
+
+app.use('/api/v1/user',userRoutes);
 // Custom error handling middleware
 app.use(errorMiddleware);
   
