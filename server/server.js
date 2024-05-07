@@ -17,7 +17,7 @@ export const razorpay = new Razorpay({
   key_secret: process.env.RAZORPAY_SECRET,
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 // to get a plan id for razorpay
 // const instance=new Razorpay({key_id:process.env.RAZORPAY_KEY_ID,key_secret:process.env.RAZORPAY_SECRET});
 // instance.plans.create({
