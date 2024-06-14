@@ -16,8 +16,6 @@ The Learning Management System (LMS) is a web application designed to facilitate
 ## Features
 - **User Authentication**: Secure login and registration for students and instructors.
 - **Course Management**: Create, update, and delete courses.
-- **Content Delivery**: Upload and manage course materials including videos, documents, and quizzes.
-- **Assignments**: Create assignments, submit work, and receive grades.
 - **Communication**: Forums and messaging for interaction between students and instructors.
 - **Progress Tracking**: Monitor student progress and performance.
 
